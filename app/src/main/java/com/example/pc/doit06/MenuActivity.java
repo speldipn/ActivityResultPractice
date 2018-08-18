@@ -23,10 +23,7 @@ public class MenuActivity extends AppCompatActivity {
             .show();
         }
         else if(prevActName.equals("login")) {
-          Intent intent = new Intent();
-          intent.putExtra("name", name);
-
-          setResult(RESULT_OK, intent);
+          setResult(RESULT_OK, data);
           finish();
         }
       }
